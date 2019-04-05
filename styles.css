@@ -1,0 +1,27 @@
+slides > slide.title-slide {
+   background-image: url("https://scientistcafe.com/images/netlify_bg3.png");
+   background-size: 100% 100%;
+   font-family: Roboto, Arial;
+}
+
+.gdbar {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 120px;
+  height: 50px;
+  background-size: 120px 50px;
+}
+
+body, title-slide {
+  font-family: Roboto, Arial;
+}
+
+
+h1, h2, h3, p {
+	font-family: Roboto, Arial;
+	color: #0E1E25;
+}
+
