@@ -4,7 +4,6 @@ author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](http://scientistcaf
 date: "`r Sys.Date()`"
 output:
   ioslides_presentation:
-    footer: https://scientistcafe.com/
     css: styles.css
     widescreen: true
     logo: https://scientistcafe.com/images/netlifylogo.png
@@ -14,24 +13,53 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Ways to build and deploy your report
+## Hello World!
 
-- Set up a Github account
-- Have a template
+- https://barug2019.netlify.com/
+- Have a GitHub/GitLab/BitBucket account
+   - Create a new repo `BlogdownExample` and clone 
+   - Create a R project and point the path to the folder
+   - `blogdown::new_site()`
+   - `blogdown::serve_site()`
+   - `blogdown::build_site()`
+   - `blogdown::new_post("Another awesome post")`
+   
+## Deploy
+
 - Link your repo to Netlify: New site from Git
-- Deploy
+- Deploy: 
+
+<center>
+![](images/deploysetting.png){width=30%}
+</center>
+
 - General -> Change site name 
 
-# Ways to build and deploy your own website
+## Go under the hood
+
+- theme: http://themes.gohugo.io (themes do not work well with blogdown: https://github.com/rstudio/blogdown/issues)
+- `blogdown::new_site(theme="frjo/hugo-theme-zen")`
+- `config.toml`
+- `content/`
+- `static/`
+- `themes/`
+- `layouts/`
+
+Modified version:
+
+- https://github.com/happyrabbit/scientistcafe.com
+
+## Other ways to build and deploy your own website
 
 1. One-click solution: https://templates.netlify.com
 2. Fork a template to GitHub/GitLab and link it to Netlify 
     - Jekyll: http://jekyllthemes.org
     - Hugo: https://themes.gohugo.io
-3. `blogdown`: 
-    - A quick example: https://bookdown.org/yihui/blogdown/
-        - Create a new folder `BlogdownExample` 
-        - Create a R project and point the path to the folder
-        - run `blogdown::new_site()`
-    - https://github.com/happyrabbit/scientistcafe.com
-    - If you don't have Github/Gitlab......No problem, just drag `public` folder to Netlify!!
+    
+## Why Static Sites   
+
+## Static Site Generators
+
+
+
+   
