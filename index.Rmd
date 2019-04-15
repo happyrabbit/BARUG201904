@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Hello World!
 
 - https://barug2019.netlify.com/
+- GitHub repo: https://github.com/happyrabbit/BARUG201904
 - Have a GitHub/GitLab/BitBucket account
    - Create a new repo `HelloBlogdown` and `git clone` 
    - Create a R project (`.Rproj`) and point the path to the folder
