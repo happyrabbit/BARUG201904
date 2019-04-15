@@ -17,8 +17,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - https://barug2019.netlify.com/
 - Have a GitHub/GitLab/BitBucket account
-   - Create a new repo `BlogdownExample` and clone 
-   - Create a R project and point the path to the folder
+   - Create a new repo `HelloBlogdown` and `git clone` 
+   - Create a R project (`.Rproj`) and point the path to the folder
    - `blogdown::new_site()`
    - `blogdown::serve_site()`
    - `blogdown::build_site()`
